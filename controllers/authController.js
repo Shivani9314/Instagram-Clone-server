@@ -102,6 +102,9 @@ const loginController = async(req,res) => {
             secure:true,
         });
 
+        console.log("refresh", refreshToken);
+        console.log("acesss", accessToken);
+
         return res.send(success(200, { accessToken }));
  
         

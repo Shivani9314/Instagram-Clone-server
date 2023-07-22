@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use(cors({
     credentials: true,
     //origin: 'http://localhost:3000'
-    origin: 'https://beautiful-churros-0a5939.netlify.app'
+    origin: 'https://playful-snickerdoodle-a8a2c0.netlify.app/#/login'
 }))
 
 

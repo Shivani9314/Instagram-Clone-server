@@ -1,5 +1,5 @@
-const User = require("../models/User");
 const Post = require("../models/Post");
+const User = require("../models/User");
 const {error, success} = require("../utils/responseWrapper");
 const cloudinary = require('cloudinary').v2;
 const { mapPostOutput } = require("../utils/Utils");
@@ -206,6 +206,7 @@ const deleteMyProfile = async(req,res) => {
 const getMyInfo = async(req,res)=>{
     try {
         const user = await User.findById(req._id);
+        console.log("getMyInfo",user);
         return res.send(success(200 , {user}))
     } catch (e) {
 
