@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use(cors({
     credentials: true,
     //origin: 'http://localhost:3000'
-    origin: 'https://playful-snickerdoodle-a8a2c0.netlify.app/#/login'
+    origin: 'https://playful-snickerdoodle-a8a2c0.netlify.app'
 }))
 
 
